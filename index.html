@@ -18,49 +18,28 @@
     <main class="container">
         <!-- search area -->
         <div class="container mb-4">
-            <nav class="navbar navbar-light mb-4">
-                <form class="d-flex w-75 m-auto">
-                    <input class="form-control me-2" type="search" placeholder="Search Your Book.." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </nav>
+            <div class="d-flex w-75 m-auto mb-4">
+                <input id="search-input" class="form-control me-2" type="search" placeholder="Search Your Book.."
+                    aria-label="Search">
+                <button id="search-btn" class="btn btn-outline-success" onclick="searchBook()">Search</button>
+            </div>
             <div>
-                <p>Search found: 200</p>
+                <p class="fw-bold">Search result: <span id="searchFound" class="text-danger fw-bold">0</span></p>
             </div>
         </div>
         <div>
             <div class="container">
-                <div class="row g-2">
-                    <div class="col-4">
+                <div id="bookCard" class="row g-5">
+                    <!-- <div class="col-4">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="" class="card-img-top" alt="">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title text-primary">Card title</h5>
+                                <p class="fw-bold">Author:</p>
+                                <p class="fw-bold">1st publish:</p>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-                    </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@ const searchBook = () => {
     }
 
     // get API
-    fetch(`http://openlibrary.org/search.json?q=${getInputValue}`)
+    fetch(`https://openlibrary.org/search.json?q=${getInputValue}`)
         .then(res => res.json())
         .then(data => getBooks(data.docs))
     getInput.value = "";

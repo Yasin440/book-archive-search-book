@@ -23,23 +23,22 @@
                     aria-label="Search">
                 <button id="search-btn" class="btn btn-outline-success" onclick="searchBook()">Search</button>
             </div>
+            <!-- Search result -->
             <div>
-                <p class="fw-bold">Search result: <span id="searchFound" class="text-danger fw-bold">0</span></p>
+                <p class="fw-bold text-primary">Search result: <span id="searchFound"
+                        class="text-danger fw-bold">0</span></p>
             </div>
         </div>
+        <!-- spinner -->
+        <div style="display: none;" id="spinner" class="text-center">
+            <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <!-- book card -->
         <div>
             <div class="container">
                 <div id="bookCard" class="row g-5">
-                    <!-- <div class="col-4">
-                        <div class="card">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Card title</h5>
-                                <p class="fw-bold">Author:</p>
-                                <p class="fw-bold">1st publish:</p>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
